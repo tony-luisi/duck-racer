@@ -153,7 +153,6 @@ function press(event) {
                     duck.x += blockSize / 2;
 
                 }
-                
                 break;
             case 39: //right
                 duck.x += blockSize / 2;
@@ -225,7 +224,7 @@ function createRandomLog() {
         return (x >= this.x && rect.x+rect.width <= this.x+this.width && rect.y >= this.y && rect.y+rect.height <= this.y+this.height);
     };
     this.below = function(rect) {
-        return (this.y> rect.y + rect.height);
+        return (this.y> rect.y + rect.height + 30);
 
     }
 }
