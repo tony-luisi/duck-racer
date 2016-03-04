@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tony Luisi</title>
+  <meta name="description" content="Tony's github website">
+  <meta name="author" content="Tony Luisi">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Teko:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+  <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<div class="container">
+      <div class="container animated bounceIn center" id="header">
+       <br><br><br><br> 
+      </div>
+
+      <div class "container" name = "main">
+        <div class="row center">
+          <div class="four columns">
+            <button id="easy" class="button-primary animated bounceInLeft" onclick="setDifficulty('easy')">EASY</button>
+          </div>
+          <div class="four columns">
+            <button id="medium" class="button-primary animated bounceInDown" onclick="setDifficulty('medium')">MEDIUM</button>
+          </div>
+          <div class="four columns">
+            <button id="hard" class="button-primary animated bounceInRight" onclick="setDifficulty('hard')">HARD</button>
+          </div>
+          
+        </div>
+        <div class="row center">
+          <div class="twelve columns">
+            <button id="start" class="button-primary animated infinite flash" onclick="go()">START</button>
+            <button class="button-primary" onclick="start()">RESET</button>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+            <div class="row">
+          <canvas id="myCanvas"></canvas>
+          <div id="overlay"></div>
+        </div>
+        <div class="container">
+                              <div class="row">
+          <div id="result" class="animated infinite flash"></div>
+        </div>
+        </div>
+
+
+
+    
+
+    
+    
+    <div style="display:none;">
+      <img id="duck" src="images/new_rubber_duck.png" width="50" height="50">
+      <img id="female_duck" src="images/female_duck.png" width="50" height="50">
+      <img id="alligator" src="images/alligator.png">
+      <img id="water" src="images/sea_bg.png">
+    </div>
+  <script type="text/javascript" src="duck.js" canvas="myCanvas"></script>
+  <script type="text/javascript">
+          start();
+
+    
+
+  </script>
+	<!-- <script type="text/javascript" src="racer.js"></script>--> 
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

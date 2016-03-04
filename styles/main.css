@@ -1,0 +1,78 @@
+
+table, th, td {
+  table-layout: fixed;
+  width: 2em;
+  height: 3em;
+  background-color: #0066FF;
+  border-width: 10px;
+  border-color: white;
+  border: solid 2px lightgrey;
+  border-radius: 10px;
+}
+
+td, th {
+  border: none;
+}
+
+
+.active {
+  background-image:url('../images/rubber-duck.png');
+  background-size: 3em 3em;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.passed {
+  background-image:url('../images/wave.png');
+  background-size: 4.2em 3em;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+body {
+  background-color: #009900;
+  font-family: 'Teko', sans-serif;  
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+#display {
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+  background-image:url('../images/duck_racer_title.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+
+}
+
+#overlay {
+  position: relative;
+  background-color:#FF8400;
+  margin-top:-25em;
+  display: block;
+  z-index:0;
+  text-align: center;
+}
+
+#racer_table {
+  box-shadow: 10px 10px 5px #888;
+}
+
+button {
+  filter: invert(0%);
+  background-color:#aa00aa;
+}
+
+body {
+    background-image: url("../images/grass_new.png");
+    background-size: 12em;
+}
+
+
+
