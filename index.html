@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Tony Luisi</title>
+  <title>DUCK LOVE!</title>
   <meta name="description" content="Tony's github website">
   <meta name="author" content="Tony Luisi">
 
@@ -38,63 +38,50 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<div class="container">
-      <div class="container animated bounceIn center" id="header">
-       <br><br><br><br> 
-      </div>
-
-      <div class "container" name = "main">
-        <div class="row center">
-          <div class="four columns">
-            <button id="easy" class="button-primary animated bounceInLeft" onclick="setDifficulty('easy')">EASY</button>
-          </div>
-          <div class="four columns">
-            <button id="medium" class="button-primary animated bounceInDown" onclick="setDifficulty('medium')">MEDIUM</button>
-          </div>
-          <div class="four columns">
-            <button id="hard" class="button-primary animated bounceInRight" onclick="setDifficulty('hard')">HARD</button>
-          </div>
-          
-        </div>
-        <div class="row center">
-          <div class="twelve columns">
-            <button id="start" class="button-primary animated infinite flash" onclick="go()">START</button>
-            <button class="button-primary" onclick="start()">RESET</button>
-          </div>
-        </div>
-
-      </div>
-
-      
+	<div class="container">
+    <div class="container animated bounceIn center" id="header">
+     <br><br><br><br> 
     </div>
-            <div class="row">
-          <canvas id="myCanvas"></canvas>
-          <div id="overlay"></div>
+
+    <div class "container" name = "main">
+      <div class="row center">
+        <div class="four columns">
+          <button id="easy" class="button-primary animated bounceInLeft" onclick="setDifficulty('easy')">EASY</button>
         </div>
-        <div class="container">
-                              <div class="row">
-          <div id="result" class="animated infinite flash"></div>
+        <div class="four columns">
+          <button id="medium" class="button-primary animated bounceInDown" onclick="setDifficulty('medium')">MEDIUM</button>
         </div>
+        <div class="four columns">
+          <button id="hard" class="button-primary animated bounceInRight" onclick="setDifficulty('hard')">HARD</button>
         </div>
-
-
-
-    
-
-    
-    
-    <div style="display:none;">
-      <img id="duck" src="images/new_rubber_duck.png" width="50" height="50">
-      <img id="female_duck" src="images/female_duck.png" width="50" height="50">
-      <img id="alligator" src="images/alligator.png">
-      <img id="water" src="images/sea_bg.png">
+        
+      </div>
+      <div class="row center">
+        <div class="twelve columns">
+          <button id="start" class="button-primary animated infinite flash" onclick="go()">START</button>
+          <button class="button-primary" onclick="start()">RESET</button>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="row">
+    <canvas id="myCanvas"></canvas>
+    <div id="overlay"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="result" class="animated infinite flash"></div>
+    </div>
+  </div>
+  <div style="display:none;">
+    <img id="duck" src="images/new_rubber_duck.png" width="50" height="50">
+    <img id="female_duck" src="images/female_duck.png" width="50" height="50">
+    <img id="alligator" src="images/alligator.png">
+    <img id="water" src="images/sea_bg.png">
+  </div>
   <script type="text/javascript" src="duck.js" canvas="myCanvas"></script>
   <script type="text/javascript">
-          start();
-
-    
-
+    start();
   </script>
 	<!-- <script type="text/javascript" src="racer.js"></script>--> 
 
