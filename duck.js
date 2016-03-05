@@ -45,7 +45,7 @@ function setDifficulty(text){
         $("#hard").removeClass("animated shake");
         $("#easy").addClass("animated shake");
 
-        noLogs = 33;
+        noLogs = 20;
     } else if (text === "medium") {
         $("button").css("background-color", "black");
         $("#medium").css("background-color", "#FF8400");
@@ -53,7 +53,7 @@ function setDifficulty(text){
         $("#easy").removeClass("animated shake");
         $("#hard").removeClass("animated shake");
         $("#medium").addClass("animated shake");
-        noLogs = 66;
+        noLogs = 40;
     } else if (text === "hard") {
         $("button").css("background-color", "black");
         $("#hard").css("background-color", "#FF8400");
@@ -61,7 +61,7 @@ function setDifficulty(text){
         $("#easy").removeClass("animated shake");
         $("#medium").removeClass("animated shake");
         $("#hard").addClass("animated shake");
-        noLogs = 99;
+        noLogs = 60;
     }
 }
 
